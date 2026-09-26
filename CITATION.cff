@@ -1,1 +1,10 @@
-
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+title: "Longitudinal Disease Incidence in Sub-Saharan Africa: Curated Indicators for HIV, Malaria, and Tuberculosis"
+authors:
+  - family-names: "Antwi"
+    given-names: "Osbert Darko"
+  - name: "Group 3 Research Team"
+version: 1.0
+date-released: "2026-09-24"
+url: "https://github.com/NanaAntwi-osbee/msc-data-curation-disease-incidence--Group-3-"
