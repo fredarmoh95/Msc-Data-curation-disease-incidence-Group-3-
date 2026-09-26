@@ -1,1 +1,129 @@
-
+<?xml version="1.0" encoding="UTF-8"?>
+<codeBook xmlns="ddi:codebook:2_5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="ddi:codebook:2_5 http://www.ddialliance.org/Specification/DDI-Codebook/2.5/XMLSchema/codebook.xsd" version="2.5">
+  <docDscr>
+    <citation>
+      <titlStmt>
+        <titl>DDI Metadata for Sub-Saharan Africa Disease Incidence Dataset</titl>
+      </titlStmt>
+      <rspStmt>
+        <AuthEnty>Group 3 Research Team</AuthEnty>
+      </rspStmt>
+      <prodStmt>
+        <prodDate date="2026-09-24">2026-09-24</prodDate>
+      </prodStmt>
+    </citation>
+  </docDscr>
+  <stdyDscr>
+    <citation>
+      <titlStmt>
+        <titl>Longitudinal Disease Incidence in Sub-Saharan Africa: Curated Indicators for HIV, Malaria, and Tuberculosis</titl>
+      </titlStmt>
+      <rspStmt>
+        <AuthEnty>Group 3 Research Team</AuthEnty>
+      </rspStmt>
+      <distStmt>
+        <distrbtr>University of Cape Coast</distrbtr>
+        <contact email="rkofinti@ucc.edu.gh">rkofinti</contact>
+      </distStmt>
+    </citation>
+    <stdyInfo>
+      <abstract>This curated dataset tracks HIV, Malaria, and Tuberculosis incidence across Sub-Saharan Africa from 2000 to 2025. Its purpose is to provide a reliable foundation for data-driven disease burden monitoring and epidemiological forecasting in the region.</abstract>
+      <sumDscr>
+        <timePrd event="start" date="2000">2000</timePrd>
+        <timePrd event="end" date="2025">2025</timePrd>
+        <nation abbr="SSA">Sub-Saharan Africa</nation>
+        <geogCover>47 Sub-Saharan African countries (World Bank classification)</geogCover>
+        <anlyUnit>Country-Year</anlyUnit>
+        <universe>Populations of the 47 specified countries</universe>
+      </sumDscr>
+    </stdyInfo>
+    <method>
+      <dataColl>
+        <dataSrc>World Health Organization (WHO) Global Health Observatory</dataSrc>
+        <collMode>Data files were downloaded in Excel format, filtered by indicator and country, and processed using Python.</collMode>
+        <cleanOps>Rows restricted to 47 Sub-Saharan countries. Blank numeric fields converted to NA. New variables (MetricType, Denominator) derived from IndicatorCode.</cleanOps>
+      </dataColl>
+    </method>
+    <dataAccs>
+      <useStmt>
+        <restrctn>Source data subject to WHO terms. Curation scripts and metadata licensed under MIT License.</restrctn>
+      </useStmt>
+    </dataAccs>
+  </stdyDscr>
+  <fileDscr>
+    <fileTxt>
+      <fileName>curated_dataset.csv</fileName>
+      <fileType>text/csv</fileType>
+    </fileTxt>
+  </fileDscr>
+  <dataDscr>
+    <var name="IndicatorCode" intrvl="discrete">
+      <labl>Indicator Code</labl>
+      <txt>Unique identifier for the health indicator assigned by WHO.</txt>
+      <varFormat type="character"/>
+    </var>
+    <var name="Indicator" intrvl="discrete">
+      <labl>Indicator Name</labl>
+      <txt>Full descriptive name of the health indicator.</txt>
+      <varFormat type="character"/>
+    </var>
+    <var name="SpatialDimValueCode" intrvl="discrete">
+      <labl>Country Code</labl>
+      <txt>ISO 3166-1 alpha-3 country code.</txt>
+      <varFormat type="character"/>
+    </var>
+    <var name="Location" intrvl="discrete">
+      <labl>Country Name</labl>
+      <txt>Name of the country or territory.</txt>
+      <varFormat type="character"/>
+    </var>
+    <var name="Period" intrvl="discrete">
+      <labl>Year</labl>
+      <txt>The year of the observation or estimate (2000-2025).</txt>
+      <varFormat type="numeric"/>
+    </var>
+    <var name="Dim1" intrvl="discrete">
+      <labl>Disaggregation</labl>
+      <txt>Sex or age group disaggregation if applicable.</txt>
+      <varFormat type="character"/>
+    </var>
+    <var name="FactValueNumeric" intrvl="continuous">
+      <labl>Numeric Value</labl>
+      <txt>The central numeric value of the observation.</txt>
+      <invalnk>
+        <txt>Missing values are represented as NA.</txt>
+      </invalnk>
+      <varFormat type="numeric"/>
+    </var>
+    <var name="FactValueUoM" intrvl="discrete">
+      <labl>Unit of Measure</labl>
+      <txt>The unit corresponding to the numeric value.</txt>
+      <varFormat type="character"/>
+    </var>
+    <var name="FactValueNumericLow" intrvl="continuous">
+      <labl>Lower Bound</labl>
+      <txt>Lower bound of the uncertainty interval.</txt>
+      <varFormat type="numeric"/>
+    </var>
+    <var name="FactValueNumericHigh" intrvl="continuous">
+      <labl>Upper Bound</labl>
+      <txt>Upper bound of the uncertainty interval.</txt>
+      <varFormat type="numeric"/>
+    </var>
+    <var name="Value" intrvl="discrete">
+      <labl>Formatted Value</labl>
+      <txt>String representation of the value including bounds.</txt>
+      <varFormat type="character"/>
+    </var>
+    <var name="MetricType" intrvl="discrete">
+      <labl>Metric Type</labl>
+      <txt>Distinguishes between incidence counts and incidence rates.</txt>
+      <varFormat type="character"/>
+    </var>
+    <var name="Denominator" intrvl="discrete">
+      <labl>Rate Denominator</labl>
+      <txt>The denominator used if the metric is a rate (e.g., 1000 population at risk).</txt>
+      <varFormat type="character"/>
+    </var>
+  </dataDscr>
+</codeBook>
