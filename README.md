@@ -47,7 +47,7 @@
 
 ## Licensing & Citation
 * **Licensing:** The curation scripts, metadata, and repository structure are provided under the open MIT License. The source data remains subject to the World Health Organization's terms of use and open access policies. 
-* **Suggested Citation:** Group 3 Research Team (2026). *Longitudinal Disease Incidence in Sub-Saharan Africa: Curated Indicators for HIV, Malaria, and Tuberculosis*. Version 1.0. University of Cape Coast. Repository: https://github.com/NanaAntwi-osbee/msc-data-curation-disease-incidence--Group-3-
+* **Suggested Citation:** Group 3 Research Team (2026). *Longitudinal Disease Incidence in Sub-Saharan Africa: Curated Indicators for HIV, Malaria, and Tuberculosis*. Version 1.0. University of Cape Coast. Repository: https://github.com/fredarmoh95/Msc-Data-curation-disease-incidence-Group-3-
 
 ---
 
