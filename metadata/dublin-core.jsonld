@@ -1,1 +1,65 @@
-
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "dcat:Dataset",
+  "dcterms:title": "Longitudinal Disease Incidence in Sub-Saharan Africa: Curated Indicators for HIV, Malaria, and Tuberculosis (2000–2025)",
+  "dcterms:creator": [
+    {
+      "@type": "dcterms:Agent",
+      "dcterms:name": "Group 3 Research Team",
+      "dcterms:affiliation": "Department of Data Science and Economic Policy, University of Cape Coast"
+    }
+  ],
+  "dcterms:contributor": [
+    {
+      "@type": "dcterms:Agent",
+      "dcterms:name": "World Health Organization (WHO)",
+      "dcterms:role": "Original Data Provider"
+    }
+  ],
+  "dcterms:publisher": {
+    "@type": "dcterms:Agent",
+    "dcterms:name": "University of Cape Coast - Department of Data Science and Economic Policy"
+  },
+  "dcterms:issued": {
+    "@type": "xsd:date",
+    "@value": "2026-09-24"
+  },
+  "dcterms:modified": {
+    "@type": "xsd:date",
+    "@value": "2026-09-24"
+  },
+  "dcterms:description": "Curated longitudinal dataset tracking HIV, Malaria, and Tuberculosis incidence across 47 Sub-Saharan African countries between 2000 and 2025. Data were retrieved from the WHO Global Health Observatory, harmonized to distinguish incidence counts from rates, and cleaned to retain uncertainty intervals.",
+  "dcterms:subject": [
+    "Sub-Saharan Africa",
+    "Epidemiology",
+    "HIV/AIDS",
+    "Malaria",
+    "Tuberculosis",
+    "Disease Incidence",
+    "Global Health Indicators"
+  ],
+  "dcterms:type": "http://purl.org/dc/dcmitype/Dataset",
+  "dcterms:format": "text/csv",
+  "dcterms:identifier": "msc-data-curation-disease-incidence-3-v1.0",
+  "dcterms:language": "en",
+  "dcterms:spatial": {
+    "@type": "dcterms:Location",
+    "dcterms:description": "Sub-Saharan Africa (World Bank regional classification, excluding regional aggregates)"
+  },
+  "dcterms:temporal": "2000/2025",
+  "dcterms:source": [
+    "https://www.who.int/data/gho/data/indicators/indicator-details/GHO/estimated-number-of-people-(all-ages)-living-with-hiv",
+    "https://www.who.int/data/gho/data/indicators/indicator-details/GHO/estimated-malaria-incidence-(per-1000-population-at-risk)",
+    "https://www.who.int/data/gho/data/indicators/indicator-details/GHO/incidence-of-tuberculosis-(per-100-000-population-per-year)"
+  ],
+  "dcterms:rights": "Source data is public health information governed by the WHO Open Access policy. Curated dataset structure, cleaning code, and metadata documentation are licensed under the MIT License.",
+  "dcterms:license": "https://opensource.org/licenses/MIT",
+  "dcterms:provenance": {
+    "@type": "dcterms:ProvenanceStatement",
+    "dcterms:description": "Extracted from the World Health Organization (WHO) Global Health Observatory portal on September 24, 2026. Filtered to 47 sovereign Sub-Saharan African countries according to World Bank regional standards. Non-country regional aggregates were excluded. Blank fact values were converted to NA to distinguish them from zero values, and indicators were categorized by metric type (counts vs. rates) with documented denominators."
+  }
+}
