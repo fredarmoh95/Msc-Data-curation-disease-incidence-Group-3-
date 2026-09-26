@@ -3,9 +3,9 @@ import os
 
 # Exact paths to your downloaded WHO data
 raw_files = [
-    r'C:\Users\antwi\OneDrive\Desktop\jones work\group 3\HIV.xlsx', 
-    r'C:\Users\antwi\OneDrive\Desktop\jones work\group 3\Malaria.xlsx', 
-    r'C:\Users\antwi\OneDrive\Desktop\jones work\group 3\TUBERCULOSIS.xlsx'
+    r'C:\Users\OneDrive\Desktop\group 3\HIV.xlsx', 
+    r'C:\Users\OneDrive\Desktop\group 3\Malaria.xlsx', 
+    r'C:\Users\OneDrive\Desktop\group 3\TUBERCULOSIS.xlsx'
 ]
 
 # Set the output path to save the cleaned CSV in the same folder
@@ -23,7 +23,7 @@ ssa_countries = [
     "Togo", "Uganda", "United Republic of Tanzania", "Zambia", "Zimbabwe"
 ]
 
-# Required columns to retain based on rubric guidelines
+# Required columns to retain based on assignment guidelines
 cols_to_keep = [
     'IndicatorCode', 'Indicator', 'SpatialDimValueCode', 'Location', 
     'Period', 'Dim1', 'FactValueNumeric', 'FactValueUoM', 
