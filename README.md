@@ -39,7 +39,7 @@
 * **Acquisition:** Data was located via the WHO Global Health Observatory portal, filtered by indicator and location type (Country), and downloaded directly as Excel workbooks.
 * **Processing Steps:** Using a custom Python script, the first two descriptive header rows of the WHO files were skipped during import. The datasets were merged and strictly filtered against the 47 World Bank Sub-Saharan African countries.
 * **Validation & Cleaning:** New derived variables (`MetricType` and `Denominator`) were added to explicitly distinguish raw incidence counts from incidence rates. Columns with high sparsity that did not align with the core indicators were dropped.
-* **Software Used:** Python 3, Pandas (via `pd.read_excel` and `pd.concat`).
+* **Software Used:** Python 3, Pandas
 
 ## Data Quality & Limitations
 * **Missing-Data Conventions:** Empty numeric observations (e.g., missing uncertainty bounds) were explicitly converted to the string `"NA"` to distinguish missing data from true zero values.
