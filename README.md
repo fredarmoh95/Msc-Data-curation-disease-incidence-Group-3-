@@ -17,7 +17,7 @@
   * Estimated number of people (all ages) living with HIV
   * Estimated malaria incidence (per 1000 population at risk)
   * Number of incident tuberculosis cases
-* **Date of Retrieval:** September 24, 2026
+* **Date of Retrieval:** September 14, 2026
 * **Original Filenames:** `HIV.xlsx`, `Malaria.xlsx`, `TUBERCULOSIS.xlsx`
 
 ## Scope & Coverage
