@@ -62,7 +62,7 @@ curated_df = pd.concat(df_list, ignore_index=True)
 # Distinguish missing observations from zero values explicitly
 curated_df.fillna({'FactValueNumeric': 'NA', 'FactValueNumericLow': 'NA', 'FactValueNumericHigh': 'NA'}, inplace=True)
 
-# Export as non-proprietary CSV
+# Export CSV
 os.makedirs(os.path.dirname(processed_path), exist_ok=True)
 curated_df.to_csv(processed_path, index=False)
 print(f"Curated dataset saved to {processed_path}")
